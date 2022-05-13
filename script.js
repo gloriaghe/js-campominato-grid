@@ -13,6 +13,11 @@ function creaRandomNum(maxRange, min, max) {
     return arreyInt;
 }
 
+const numUno100 = creaRandomNum(100, 1, 100);
+const numUno81 = creaRandomNum(81, 1, 81);
+const numUno49 = creaRandomNum(49, 1, 49);
+console.log(numUno100)
+
 // creare blocchetti tramite js
 const createmyElement = (elemAggiuto, classAggiuta) => {
     const node = document.createElement(elemAggiuto);
@@ -35,8 +40,9 @@ InizaGioco.addEventListener("click",
         if (1 === inpuntUserParseInt) {
             for (let i = 0; i < 100; i++){
                 const crea100 =  createmyElement("div", "square1 square");
-                const numrandom100 = creaRandomNum(100, 1, 100);
-                crea100.append(numrandom100[i]);
+                let arrmyItem = numUno100[i];
+                crea100.append(arrmyItem);
+                console.log(arrmyItem)
                 crea100.addEventListener("click",
                     () => crea100.classList.add("squareClick")
                 )
@@ -45,8 +51,7 @@ InizaGioco.addEventListener("click",
         } else if (inpuntUserParseInt == 2){
             for (let i = 0; i < 81; i++){
                 const crea81 = createmyElement("div", "square2 square");
-                const numrandom81 = creaRandomNum(81, 1, 81);
-                crea81.append(numrandom81[i]);
+                crea81.append(numUno81[i]);
                 crea81.addEventListener("click",
                     () => crea81.classList.add("squareClick")
                 )
@@ -55,8 +60,7 @@ InizaGioco.addEventListener("click",
         } else if (inpuntUserParseInt == 3){
             for (let i = 0; i < 49; i++){
                 const crea49 =  createmyElement("div", "square3 square");
-                const numrandom49 = creaRandomNum(49, 1, 49);
-                crea49.append(numrandom49[i]);
+                crea49.append(numUno49[i]);
                 crea49.addEventListener("click",
                     () => crea49.classList.add("squareClick")
                 )
