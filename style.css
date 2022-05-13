@@ -5,14 +5,30 @@
 
 #grid {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
 }
 
 .square {
     border: 1px solid black;
 }
 
-.square-color {
+.square1 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.square2 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.square3 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.square-click {
     background-color: rgb(80, 191, 255);
 }
