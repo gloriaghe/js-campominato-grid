@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#grid {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.square {
+    border: 1px solid black;
+}
+
+.square-color {
+    background-color: rgb(80, 191, 255);
+}
