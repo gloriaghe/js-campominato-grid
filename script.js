@@ -16,7 +16,6 @@ function creaRandomNum(maxRange, min, max) {
 const numUno100 = creaRandomNum(100, 1, 100);
 const numUno81 = creaRandomNum(81, 1, 81);
 const numUno49 = creaRandomNum(49, 1, 49);
-console.log(numUno100)
 
 // creare blocchetti tramite js
 const createmyElement = (elemAggiuto, classAggiuta) => {
@@ -42,7 +41,6 @@ InizaGioco.addEventListener("click",
                 const crea100 =  createmyElement("div", "square1 square");
                 let arrmyItem = numUno100[i];
                 crea100.append(arrmyItem);
-                console.log(arrmyItem)
                 crea100.addEventListener("click",
                     () => crea100.classList.add("squareClick")
                 )
