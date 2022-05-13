@@ -1,9 +1,5 @@
-
-
 // funzione numeri random
 let randommynum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-
 
 // funzione genera numeri da 1 a tot tutti diversi
 function creaRandomNum(maxRange, min, max) {
@@ -27,10 +23,12 @@ const createmyElement = (elemAggiuto, classAggiuta) => {
 const inputUser = document.querySelector("input");
 const InizaGioco = document.querySelector("button");
 const GridPagina = document.getElementById("grid");
+const sectionNone = document.querySelector("section")
 
-
+//iniza gioco al click
 InizaGioco.addEventListener("click",
     function() {
+        sectionNone.className = "none"
 
         inpuntUserParseInt = parseInt(inputUser.value)
 
@@ -62,7 +60,3 @@ InizaGioco.addEventListener("click",
     }
 
 )
-
-// aggiungere classi ai blocchetti
-
-// aggiungere numeri ai blocchetti

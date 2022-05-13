@@ -32,3 +32,7 @@
 .square-click {
     background-color: rgb(80, 191, 255);
 }
+
+.none {
+    display: none;
+}
