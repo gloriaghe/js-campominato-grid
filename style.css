@@ -22,23 +22,29 @@ h1{
 h2{
     margin: 25px 0;
 }
-.square {
+/* .square {
     border: 1px solid black;
-}
+} */
 
 .square1 {
     width: calc(100% / 10);
     height: calc(100% / 10);
+    border: 1px solid black;
+
 }
 
 .square2 {
     width: calc(100% / 9);
     height: calc(100% / 9);
+    border: 1px solid black;
+
 }
 
 .square3 {
     width: calc(100% / 7);
     height: calc(100% / 7);
+    border: 1px solid black;
+
 }
 
 .squareClick {

@@ -16,6 +16,10 @@ function creaRandomNum(maxRange, min, max) {
 const numUno100 = creaRandomNum(100, 1, 100);
 const numUno81 = creaRandomNum(81, 1, 81);
 const numUno49 = creaRandomNum(49, 1, 49);
+const bombe100 = creaRandomNum(16, 1, 100);
+const bombe81 = creaRandomNum(16, 1, 81);
+const bombe49 = creaRandomNum(16, 1, 49);
+
 
 // creare blocchetti tramite js
 const createmyElement = (elemAggiuto, classAggiuta) => {
@@ -46,7 +50,7 @@ InizaGioco.addEventListener("click",
                 )
                 grid.append(crea100);
             }
-        } else if (inpuntUserParseInt == 2){
+        } else if (inpuntUserParseInt === 2){
             for (let i = 0; i < 81; i++){
                 const crea81 = createmyElement("div", "square2 square");
                 crea81.append(numUno81[i]);
@@ -55,7 +59,7 @@ InizaGioco.addEventListener("click",
                 )
                 grid.append(crea81);
             }
-        } else if (inpuntUserParseInt == 3){
+        } else if (inpuntUserParseInt === 3){
             for (let i = 0; i < 49; i++){
                 const crea49 =  createmyElement("div", "square3 square");
                 crea49.append(numUno49[i]);
@@ -67,6 +71,5 @@ InizaGioco.addEventListener("click",
             }
         }
     }
-    
-    )
+)
   
